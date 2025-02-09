@@ -6,8 +6,89 @@
     <!-- <meta http-equiv=“X-UA-Compatible” content=“ie=edge”> -->
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: system-ui, -apple-system, sans-serif;
+            background: linear-gradient(to bottom right, rgb(120, 129, 174), rgb(90, 99, 144));
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+        }
+
+        h1 {
+            color: white;
+            margin: 0 0 0.5rem 0;
+            font-size: 1.5rem;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.8);
+            margin: 0 0 2rem 0;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .link {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.2s;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+        }
+
+        .link:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        footer {
+            margin-top: 2rem;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.875rem;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <img 
+            src="Icon.png" 
+            alt="Profile" 
+            class="profile-img"
+        >
+        <h1>WaterSomi</h1>
+        <p>Developer & Community Builder</p>
+        
+        <div class="links">
+            <a href="https://watersomi.bsky.social" class="link">Bluesky</a>
+            <a href="https://discord.com" class="link">Discord</a>
+            <a href="https://twitch.com" class="link">Twitch</a>
+        </div>
+
+        <footer>© 2024 • Built with ❤️</footer>
+    </div>
 </body>
 </html>
